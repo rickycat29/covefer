@@ -84,13 +84,11 @@ document.addEventListener("click", (e) => {
 
 // Fix back/forward cache (Safari/iOS + alcuni Android)
 window.addEventListener("pageshow", (e) => {
-  // pageshow scatta anche quando torna indietro (bfcache)
   document.body.classList.remove("page-leave");
   document.body.classList.add("page-ready");
 });
 
 window.addEventListener("pagehide", () => {
-  // evita che resti in stato "leave" in cache
   document.body.classList.remove("page-leave");
 });
 
