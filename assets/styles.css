@@ -455,7 +455,7 @@ html[data-theme="dark"] .themeToggle .icon-moon{ display:block; }
 }
 
 .ratio{
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16 / 10;
   border-radius: calc(var(--radius) - 6px);
   overflow: hidden;
   background: var(--surface2);
