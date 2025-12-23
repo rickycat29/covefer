@@ -82,13 +82,20 @@ document.addEventListener("click", (e) => {
   }, 200);
 });
 
-// Fix back/forward cache (Safari/iOS + alcuni Android)
-window.addEventListener("pageshow", (e) => {
+// Fix back/forward cache (Chrome/Edge/Safari/iOS/Android)
+window.addEventListener("pageshow", () => {
   document.body.classList.remove("page-leave");
   document.body.classList.add("page-ready");
+
+  document.body.style.transition = "none";
+  document.body.style.opacity = "1";
+
+  requestAnimationFrame(() => {
+    document.body.style.transition = "";
+    document.body.style.opacity = "";
+  });
 });
 
 window.addEventListener("pagehide", () => {
   document.body.classList.remove("page-leave");
 });
-
