@@ -1,0 +1,15 @@
+covefer-new/
+  index.html
+  chi-siamo.html
+  prodotti.html
+  contatti.html
+  assets/
+    styles.css
+    app.js
+    img/
+      colori.jpg
+      chiavi.jpg
+      ferramenta.jpg
+      casalinghi.jpg
+      elettrico.jpg
+      hero.jpg

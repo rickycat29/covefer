@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="CO.VE.FER. Snc - Ferramenta, colori e vernici, serrature, casalinghi, materiale elettrico. Orte (VT)." />
+  
+  <script>
+  (function () {
+    try {
+      var t = localStorage.getItem("theme");
+      if (t === "dark") document.documentElement.setAttribute("data-theme", "dark");
+    } catch (e) {}
+  })();
+  </script>
+  
+  <title>CO.VE.FER. - Orte (VT)</title>
+
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <a class="skip" href="#contenuto">Salta al contenuto</a>
+
+  <header>
+    <div class="container">
+      <nav class="nav" aria-label="Navigazione principale">
+        <a class="brand" href="index.html">
+          <div class="brandText">
+            <strong>CO.VE.FER.</strong>
+            <span>Ferramenta • Orte (VT)</span>
+          </div>
+        </a>
+
+        <div class="navLinks" role="navigation" aria-label="Pagine">
+          <a href="chi-siamo.html">Chi Siamo</a>
+          <a href="prodotti.html">Prodotti</a>
+          <a href="contatti.html">Contatti</a>
+        </div>
+
+        <div class="navCta">
+
+          <button class="themeToggle" type="button"
+            id="themeToggle"
+            role="switch"
+            aria-checked="false"
+            aria-label="Cambia tema">
+
+              <div class="switch" aria-hidden="true">
+                <div class="knob"></div>
+              </div>
+
+              <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41
+                        M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+
+              <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M21 12.8A9 9 0 1 1 11.2 3
+                        a7 7 0 0 0 9.8 9.8Z"
+                      stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+        </button>
+
+          <a class="btn" href="mailto:info@covefer.it">info@covefer.it</a>
+          <button class="btn burger" type="button" data-burger aria-expanded="false" aria-controls="menuMobile" aria-label="Apri menu">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <div id="menuMobile" class="mobileMenu" data-mobilemenu>
+        <a href="chi-siamo.html">Chi Siamo</a>
+        <a href="prodotti.html">Prodotti</a>
+        <a href="contatti.html">Contatti</a>
+        <a href="mailto:info@covefer.it">info@covefer.it</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenuto">
+    <section class="hero">
+      <div class="container">
+        <div class="heroGrid">
+          <div class="panel">
+            <div class="panelInner">
+              <div class="kicker"><span class="dot" aria-hidden="true"></span> Ferramenta & forniture</div>
+              <h1>CO.VE.FER.</h1>
+              <p class="lead">
+                Colori e vernici, chiavi e serrature, ferramenta, casalinghi e materiale elettrico.
+              </p>
+
+              <div class="actions">
+                <a class="btn primary" href="prodotti.html">Vedi prodotti</a>
+                <a class="btn" href="chi-siamo.html">Chi siamo</a>
+                <a class="btn" href="contatti.html">Contatti</a>
+              </div>
+
+              <div class="pills" aria-label="Categorie rapide">
+                <span class="pill">Colori e vernici</span>
+                <span class="pill">Chiavi e serrature</span>
+                <span class="pill">Ferramenta</span>
+                <span class="pill">Casalinghi</span>
+                <span class="pill">Materiale elettrico</span>
+              </div>
+            </div>
+          </div>
+
+          <aside class="panel sidePanel" aria-label="Info rapide">
+            <div class="panelInner sideTop">
+              <h2>Info rapide</h2>
+              <p>
+                Inserire orari / elenco servizi (es. duplicazione chiavi).
+              </p>
+              <div class="pills">
+                <span class="pill">Orte (VT)</span>
+                <span class="pill">Tel/Fax 0761 402900</span>
+              </div>
+            </div>
+            <div class="sideBottom">
+              <a class="btn" href="mailto:info@covefer.it">Email</a>
+              <a class="btn primary" href="contatti.html">Scrivi</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="sectionTitle">
+          <h2>Reparti</h2>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <div class="thumb">
+              <img src="assets/img/colori.jpg" alt="" loading="lazy" onerror="this.remove()" />
+            </div>
+            <div class="cardBody">
+              <h3>Colori e Vernici</h3>
+              <p>Finitura per interno, Rivestimento per esterni, Fondi e smalti</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb">
+              <img src="assets/img/chiavi.jpg" alt="" loading="lazy" onerror="this.remove()" />
+            </div>
+            <div class="cardBody">
+              <h3>Chiavi e Serrature</h3>
+              <p>Serrature di varie marche e servizio duplicazione chiavi</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb">
+              <img src="assets/img/ferramenta.jpg" alt="" loading="lazy" onerror="this.remove()" />
+            </div>
+            <div class="cardBody">
+              <h3>Ferramenta</h3>
+              <p>Maniglieria, minuteria metallica, viteria</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb">
+              <img src="assets/img/casalinghi.jpg" alt="" loading="lazy" onerror="this.remove()" />
+            </div>
+            <div class="cardBody">
+              <h3>Casalinghi</h3>
+              <p>Articoli per la casa</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb">
+              <img src="assets/img/elettrico.jpg" alt="" loading="lazy" onerror="this.remove()" />
+            </div>
+            <div class="cardBody">
+              <h3>Materiale elettrico</h3>
+              <p>Led, illuminazione, materiale elettrico</p>
+            </div>
+          </article>
+          
+          <article class="card">
+            <div class="thumb">
+              <img src="assets/img/servizi.jpg" alt="" loading="lazy" onerror="this.remove()" />
+            </div>
+            <div class="cardBody">
+              <h3>Servizi</h3>
+              <p>Spazio per servizi extra (taglio chiavi, consigli tecnici, ordini su richiesta, ecc.).</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footerGrid">
+        <div>
+          <small>© <span data-year></span> CO.VE.FER.</small>
+          <div style="height:6px"></div>
+          <small><a href="chi-siamo.html">Chi Siamo</a> · <a href="prodotti.html">Prodotti</a> · <a href="contatti.html">Contatti</a></small>
+        </div>
+
+        <div class="footerNote">
+          <small>
+            CO.VE.FER. Snc di Pulcini Michele e Paola - Sede: Via Rifugio, 22 - Punto Vendita: Via dei Calafati, 13/a
+            01028 Orte (VT) - Tel/Fax 0761/402900 - C.F./P.IVA 00240120568 - www.covefer.it - info@covefer.it
+          </small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
