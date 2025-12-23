@@ -397,27 +397,6 @@ body{
   overflow-x: hidden;
 }
 
-/* =========================
-   PAGE TRANSITIONS
-   ========================= */
-
-/* Stato iniziale: invisibile */
-body{
-  opacity: 0;
-  transition: opacity .10s ease;
-}
-
-/* Quando la pagina è pronta */
-body.page-ready{
-  opacity: 1;
-}
-
-/* Fade-out quando si naviga */
-body.page-leave{
-  opacity: 0;
-}
-
-
 /* Background globale unico (tutte le pagine) */
 body::before{
   content:"";
