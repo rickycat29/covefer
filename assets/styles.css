@@ -465,3 +465,45 @@ html[data-theme="dark"] .themeToggle .icon-moon{ display:block; }
 @media (max-width: 520px){
   .ratio{ aspect-ratio: 4 / 3; }
 }
+
+/* ===== Chi siamo layout compatto ===== */
+.chiSiamoLayout{
+  display: grid;
+  grid-template-columns: 1fr 220px; /* testo + quadratino */
+  gap: 18px;
+  align-items: center;
+}
+
+/* testo leggermente più stretto */
+.chiSiamoText{
+  min-width: 0;
+}
+
+/* riquadro immagine */
+.chiSiamoImage{
+  width: 220px;
+  height: 180px;
+  border-radius: 16px;
+  background: var(--surface2);
+  border: 1px solid var(--line);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.chiSiamoImage img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* mobile: immagine sotto */
+@media (max-width: 860px){
+  .chiSiamoLayout{
+    grid-template-columns: 1fr;
+  }
+
+  .chiSiamoImage{
+    width: 100%;
+    height: 180px;
+  }
+}
