@@ -9,7 +9,7 @@ covefer-new/
     img/
       colori.jpg
       chiavi.jpg
-      ferramenta.jpg
+      ferramenta.png
       casalinghi.jpg
       elettrico.jpg
       hero.jpg

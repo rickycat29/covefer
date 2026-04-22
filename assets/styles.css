@@ -147,16 +147,37 @@ header{
   border-radius:14px;
   font-size:14px;
   cursor:pointer;
-}
-.btn:hover{ background: var(--surface2); }
-.btn.primary{
-  border-color: color-mix(in srgb, var(--brand1) 35%, var(--line));
-  background: linear-gradient(135deg, color-mix(in srgb, var(--brand1) 18%, transparent), color-mix(in srgb, var(--brand2) 14%, transparent));
-}
-.btn.primary:hover{
-  background: linear-gradient(135deg, color-mix(in srgb, var(--brand1) 24%, transparent), color-mix(in srgb, var(--brand2) 18%, transparent));
+  transition: all 0.25s ease;
 }
 
+/* HOVER = STILE PRIMARY (gradiente blu/viola) */
+.btn:hover{
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--brand1) 24%, transparent),
+    color-mix(in srgb, var(--brand2) 18%, transparent)
+  );
+  color: white;
+  border-color: color-mix(in srgb, var(--brand1) 35%, var(--line));
+}
+
+/* RESET primary (così non parte già blu) */
+.btn.primary{
+  background: var(--surface);
+  border-color: var(--line);
+  color: var(--text);
+}
+
+/* Hover uguale anche per primary */
+.btn.primary:hover{
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--brand1) 24%, transparent),
+    color-mix(in srgb, var(--brand2) 18%, transparent)
+  );
+  color: white;
+  border-color: color-mix(in srgb, var(--brand1) 35%, var(--line));
+}
 .burger{ display:none; width:42px; height:42px; }
 .burger svg{ width:20px; height:20px; opacity:.9; }
 
@@ -548,3 +569,4 @@ html[data-theme="dark"] .themeToggle .icon-moon{ display:block; }
     height: 18  0px;
   }
 }
+
